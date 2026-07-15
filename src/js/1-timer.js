@@ -4,7 +4,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-//import '../css/styles.css';
+import '../css/styles.css';
 
 
 let userSelectedDate = null;
