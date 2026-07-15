@@ -19,15 +19,7 @@
 
 
 
-/* Контейнер для инпута и кнопки */
-.controls {
-  display: flex;
-  align-items: center;
-  margin-bottom: 32px;
-  /* Отступ вниз, чтобы отодвинуть цифры таймера */
-}
 
-/* Поле ввода календаря */
 #datetime-picker {
   font-family: sans-serif;
   font-size: 18px;
@@ -42,16 +34,11 @@
 
 #datetime-picker:disabled {
   background-color: #fafafa;
-  /* Светло-серый фон */
   color: #cccccc;
-  /* Бледный цвет текста внутри */
   border-color: #e0e0e0;
-  /* Бледная рамка */
   cursor: not-allowed;
-  /* Курсор запрета */
 }
 
-/* Кнопка Start */
 button[data-start] {
   font-family: sans-serif;
   font-size: 18px;
@@ -61,18 +48,14 @@ button[data-start] {
   background-color: #ffffff;
   color: #333333;
   margin-left: 8px;
-  /* Небольшой зазор между инпутом и кнопкой */
+  
   cursor: pointer;
   height: 39px;
-  /* Выравниваем высоту кнопки строго по инпуту */
+  
   box-sizing: border-box;
   transition: all 0.2s ease;
 }
 
-button[data-start]:hover:not(:disabled) {
-  background-color: #f0f0f0;
-  border-color: #888888;
-}
 
 button[data-start]:disabled {
   background-color: #fafafa;
@@ -81,7 +64,6 @@ button[data-start]:disabled {
   cursor: not-allowed;
 }
 
-/* Блок таймера под элементами управления */
 .timer {
   display: flex;
   gap: 24px;
@@ -108,101 +90,3 @@ button[data-start]:disabled {
   margin-top: 8px;
 }
 
-/*****************************/
-
-/*
-.btn-start {
-  background-color: #4CAF50;
-  color: white;
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  
-}*/
-
-/* Вид кнопки, когда она НЕАКТИВНА */
-/*.btn-start:disabled {
-  background-color: #cccccc;
-  /* Меняем цвет на серый */
- /* color: #666666;
-  cursor: not-allowed;
-  /* Меняем курсор на знак запрета */
-  /*opacity: 0.5;
-  /* Делаем её бледной (полупрозрачной) */
-/*}*/
-
-/* Общий контейнер таймера */
-/*.timer {
-  display: flex;
-  gap: 24px;
-  /* Расстояние между блоками времени */
-  /*margin-top: 32px;
-}*/
-
-/* Контейнер для цифры и подписи */
-/*.field {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-   Центрируем текст по вертикали 
-}*/
-
-/* Большие цифры (как на макете) 
-.value {
-  font-size: 48px;
-   Увеличиваем размер цифр 
-  font-weight: 400;
-   Обычная или слегка полужирная насыщенность 
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
-   Чтобы цифры не прыгали при анимации 
-}*/
-
-/* Мелкие подписи под цифрами (DAYS, HOURS...) 
-.label {
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  /* Все буквы заглавные 
-  color: #000000;
-  margin-top: 8px;
-  /* Отступ от цифры сверху 
-}*/
-
-/* Поле ввода календаря 
-#datetime-picker {
-  font-family: sans-serif;
-  font-size: 18px;
-  padding: 8px 12px;
-  border: 1px solid #b6b6b6;
-  /* Серая тонкая рамка 
-  border-radius: 0px;
-  /* Полностью острые углы, как на фото 
-  outline: none;
-  width: 250px;
-  color: #333333;
-}*/
-
-/* Кнопка Start (базовые стили) 
-button[data-start] {
-  font-family: sans-serif;
-  font-size: 18px;
-  padding: 8px 16px;
-  border: 1px solid #b6b6b6;
-  /* Рамка совпадает с инпутом 
-  border-radius: 0px;
-  /* Острые углы 
-  background-color: #ffffff;
-  /* Белый фон 
-  color: #333333;
-  margin-left: 4px;
-  /* Небольшой отступ от инпута 
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-/* Стиль кнопки при наведении (только если она активна) 
-button[data-start]:hover:not(:disabled) {
-  background-color: #f0f0f0;
-  border-color: #888888;
-}*/
