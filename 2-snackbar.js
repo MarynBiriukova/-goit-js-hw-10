@@ -1,2 +1,2 @@
-import"./assets/styles-CM0pMPIy.js";console.log("Snackbar");
+import"./assets/styles-iNdfb8S6.js";console.log("Snackbar");
 //# sourceMappingURL=2-snackbar.js.map
