@@ -34,7 +34,7 @@ const secondsVal = document.querySelector("[data-seconds]");
       tInterval = null;
       inputPicker.disabled = false;
       //startBtn.disabled = false;
-      updateTimerInterface({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      updateTInterface({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       return;
     }
 

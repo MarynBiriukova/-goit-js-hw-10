@@ -19,7 +19,7 @@ const form = document.querySelector('.form');
 
 form.addEventListener('submit', (evt) => {
     
-    event.preventDefault();
+    evt.preventDefault();
 
     const delay = Number(evt.currentTarget.elements.delay.value);
     const state = evt.currentTarget.elements.state.value;
@@ -29,8 +29,11 @@ form.addEventListener('submit', (evt) => {
             if (state === 'fulfilled') resolve(delay);
             else reject(delay);
 
+        }, delay);    
     
-            result
+    });
+
+    result
                 .then((data) => {
                     //console.log(`✅ Fulfilled promise in ${data}ms`);
                     iziToast.success({
@@ -47,10 +50,5 @@ form.addEventListener('submit', (evt) => {
                         });
                 })
 
-
-        }, delay);
-
-        form.reset();
-    
-    });
+    form.reset();
 })
