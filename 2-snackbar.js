@@ -1,2 +1,2 @@
-import"./assets/styles-iNdfb8S6.js";console.log("Snackbar");
+import"./assets/styles-DMbuSmzM.js";import{i as t}from"./assets/vendor-BbbuE1sJ.js";t.settings({position:"topRight",messageColor:"#ffffff",iconColor:"#ffffff",borderRadius:"8px",theme:"dark",progressBar:!1});const o=document.querySelector(".form");o.addEventListener("submit",r=>{event.preventDefault();const e=Number(r.currentTarget.elements.delay.value),a=r.currentTarget.elements.state.value,f=new Promise((i,n)=>{setTimeout(()=>{a==="fulfilled"?i(e):n(e),f.then(s=>{t.success({message:`Fulfilled promise in ${s}ms`,backgroundColor:"#59b17a"})}).catch(s=>{t.error({message:`Rejected promise in ${s}ms`,backgroundColor:"#ef4040"})})},e),o.reset()})});
 //# sourceMappingURL=2-snackbar.js.map
