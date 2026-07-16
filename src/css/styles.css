@@ -89,4 +89,84 @@ button[data-start]:disabled {
   color: #000000;
   margin-top: 8px;
 }
+/*****************************************************/
 
+/* Общие стили для страницы и шрифта */
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #2e2f42;
+}
+
+/* Контейнер формы */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 360px;
+}
+
+/* Стили для текстовой метки и инпута */
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.form input[type="number"] {
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form input[type="number"]:focus {
+  border-color: #4e75ff;
+}
+
+/* Стили для рамки выбора состояния (fieldset) */
+.form fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  gap: 24px;
+}
+
+.form legend {
+  font-size: 16px;
+  padding: 0 4px;
+}
+
+/* Стили для радио-кнопок внутри fieldset */
+.form fieldset label {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Кнопка отправки */
+.form button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #e5e5e5;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e2f42;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form button[type="submit"]:hover {
+  background-color: #cfcfcf;
+}
